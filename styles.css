@@ -7,7 +7,7 @@ body{
     background-size: cover;                
    }
    .goUp{
-    /*display:none;*/
+    display:none;
     padding:20px;
     background:#16afaa;
     font-size:20px;
