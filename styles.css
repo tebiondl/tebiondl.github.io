@@ -1,0 +1,28 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url('hr.jpg');
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-size: cover;                
+   }
+   .goUp{
+    display:none;
+    padding:20px;
+    background:#16afaa;
+    font-size:20px;
+    color:#1425a8;
+    cursor:pointer;
+    position: fixed;
+    bottom:20px;
+    right:20px;
+    z-index: +1;
+   }
+   .textbg{
+    border: 2px solid #3e9efe; 
+    padding: 10px; 
+    background-color:black; 
+    color:white; 
+    font-family: arial,helvetica; 
+    font-size:14px;
+   }
