@@ -29,8 +29,22 @@ body{
    .navSearch{
        display:none;
    }
-   .navSearchIcons{
+   
+   .superpos{
+    z-index: +1;
+   }
+   .navsuperpos{
+       background:#0f82af;
+       top: 0;
+       position: absolute;
+       max-width: 15%;
 
    }
+   .mainnav{
+      background:#0f82af;
+   }
    
+   .no-word{
+       
+   }
 

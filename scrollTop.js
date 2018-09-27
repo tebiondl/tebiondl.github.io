@@ -16,8 +16,12 @@ $(document).ready(function () {
     });
 
     var x = 0;
+    var y = 0;
 
     $(".navSearchIcon").click(() => {
+
+        $(".no-word").show();
+
         if (x == 0) {
             $(".navSearch").show();
             x = 1;      
@@ -30,16 +34,21 @@ $(document).ready(function () {
 
     });
 
+    $(".navsuperpos").click(() => {
+        
+            $(".no-word").hide();
+                 
+        });
+
+        $(".close-search-nav").click(() => {
+
+            $(".no-word").show();
+    
+        });
 
 
-    function myFunction() {
-        var x = document.getElementById("myTopnav");
-        if (x.className === "topnav") {
-            x.className += " responsive";
-        } else {
-            x.className = "topnav";
-        }
-    }
+
+
 
 
 });
