@@ -19,10 +19,9 @@ body{
     z-index: +1;
    }
    .textbg{
-    border: 2px solid #3e9efe; 
+     
     padding: 10px; 
-    background-color:black; 
-    color:white; 
+    color:black; 
     font-family: arial,helvetica; 
     font-size:14px;
    }
