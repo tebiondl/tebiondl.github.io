@@ -37,6 +37,7 @@ $(document).ready(function () {
                 $(".navSearch").fadeIn();
                 x = 1;
                 console.log(x);
+                /*removeHighlight();*/
             } else {
                 $(".navSearch").fadeOut();
                 x = 0;
@@ -59,7 +60,8 @@ $(document).ready(function () {
 
     });
 
-    $("#word").click(() => {
+    
+    /*$("#word").click(() => {
         if (z == 0) {
             if (y == 0) {
                 $(".no-word").hide();
@@ -70,9 +72,38 @@ $(document).ready(function () {
             }
         }
 
+    });*/
+
+    
+    
+
+    var w = new Hilitor("content");
+
+    function highlight() {
+        var search = document.getElementById("searchwords").value;
+        if (search.length > 0) w.apply(search)
+        else removeHighlight();
+        document.getElementById("searchwords").value = "";
+    }
+
+    function removeHighlight() {
+        w.remove();
+    }
+
+    searchwords.addEventListener("keydown", function (e) {
+        var a = e.key;
+        if(a == "Enter"){
+            
+            console.log("#searchwords");
+            console.log("hola");
+
+           highlight();
+           $(".navSearch").fadeOut();
+           x = 0;
+           
+        }
     });
 
-    console.log("#search");
 
 
 
