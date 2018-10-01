@@ -2,6 +2,10 @@ $(document).ready(function () {
 
     $('.sidenav').sidenav();
 
+    $(document).ready(function(){
+        $('.modal').modal();
+      });
+
     $('.goUp').click(function () {
         $('body, html').animate({
             scrollTop: '0px'
@@ -104,8 +108,23 @@ $(document).ready(function () {
         }
     });
 
+    function highlight1() {
+        var search1 = document.getElementById("searchwords1").value;
+        if (search1.length > 0) w.apply(search1)
+        else removeHighlight();
+        document.getElementById("searchwords1").value = "";
+    }
 
+    searchwords1.addEventListener("keydown", function (e) {
+        var b = e.key;
+        if(b == "Enter"){
 
+           highlight1();
+           x = 0;
+           $('#modal1').modal('close');
+    
+        }
+    });
 
 
 });
