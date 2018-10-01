@@ -128,3 +128,13 @@ $(document).ready(function () {
 
 
 });
+
+function changeColor(text) {
+	text.style.color = "orange";
+	text.style.textDecoration = "underline";
+}
+
+function noColor(text) {
+	text.style.color = "white";
+	text.style.textDecoration = "none";
+}

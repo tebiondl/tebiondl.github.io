@@ -21,10 +21,18 @@ body{
    .textbg{
      
     padding: 10px; 
-    color:black; 
+    color:white; 
     font-family: arial,helvetica; 
     font-size:14px;
    }
+   .textbg1{
+     
+    padding: 10px; 
+    color:white; 
+    font-family: "plasmati"; 
+    font-size:14px;
+   }
+
    .navSearch{
        display:none;
    }
@@ -33,14 +41,14 @@ body{
     z-index: +1;
    }
    .navsuperpos{
-       background:#0f82af;
+       background:#b26ed8;
        top: 0;
        position: absolute;
        max-width: 15%;
 
    }
    .mainnav{
-      background:#0f82af;
+      background:#8349a3;
    }
    
    .mobwin{
@@ -50,4 +58,8 @@ body{
     top: 10%; 
     transform: scaleX(1) scaleY(1);
    }
+   @font-face {
+    font-family: "plasmati";
+    src:url(plasmatic.ttf);
+}
 
