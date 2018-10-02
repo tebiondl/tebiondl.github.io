@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
     crossorigin="anonymous">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="codepenelementcard.css">
 
   <!--Import materialize.css-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
@@ -17,13 +18,18 @@
   <script src="web-script.js"></script>
   <script src="hilitor.js"></script>
 
+
   <!--Let browser know website is optimized for mobile-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Miguel Barragán Rodríguez</title>
 
+
 </head>
 
 <body>
+
+
+
   <a class="goUp">
     <i class="fas fa-arrow-up"></i>
   </a>
@@ -38,16 +44,20 @@
             <a href="#" class="brand-logo truncate center">EPICIDAD</a>
             <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
             <ul class="left hide-on-med-and-down">
-              <li><a class="navSearchIcon" href="#"><i class="material-icons left" style="color: orange;" >search</i></a></li>
+              <li><a class="navSearchIcon" href="#"><i class="material-icons left" style="color: orange;">search</i></a></li>
             </ul>
           </div>
         </nav>
       </div>
 
+
+
       <ul class="sidenav" id="mobile-demo">
         <li><a class="waves-effect waves-light btn modal-trigger" href="#modal1">Search<i class="material-icons left"
               style="font-size:32px;">search</i></a></li>
       </ul>
+
+
 
       <div id="modal1" class="modal">
         <div class="modal-content">
@@ -77,6 +87,8 @@
     </div>
   </div>
 
+
+
   <div class="container">
     <div class="row">
       <div class="col s12 m6">
@@ -92,9 +104,12 @@
             </p>
           </div>
           <div class="card-action">
-            <a href="https://telegram.me/TebionDL"><i class="fab fa-telegram" style="font-size:48px; color: white;" onmouseover="changeColor(this)" onmouseout="noColor(this)"></i></a>
-            <a href="https://github.com/tebiondl"><i class="fab fa-github" style="font-size:48px; color: white;" onmouseover="changeColor(this)" onmouseout="noColor(this)"></i></a>
-            <a href="https://www.facebook.com/miguel.barraganrodriguez.1"><i class="fab fa-facebook" style="font-size:48px; color: white;" onmouseover="changeColor(this)" onmouseout="noColor(this)"></i></a>
+            <a href="https://telegram.me/TebionDL"><i class="fab fa-telegram" style="font-size:48px; color: white;"
+                onmouseover="changeColor(this)" onmouseout="noColor(this)"></i></a>
+            <a href="https://github.com/tebiondl"><i class="fab fa-github" style="font-size:48px; color: white;"
+                onmouseover="changeColor(this)" onmouseout="noColor(this)"></i></a>
+            <a href="https://www.facebook.com/miguel.barraganrodriguez.1"><i class="fab fa-facebook" style="font-size:48px; color: white;"
+                onmouseover="changeColor(this)" onmouseout="noColor(this)"></i></a>
           </div>
         </div>
         <div class="card purple darken-2">
@@ -141,7 +156,8 @@
             </p>
           </div>
           <div class="card-action">
-            <a href="https://www.youtube.com/watch?v=G1NGE16Bt48"><i class="fab fa-youtube" style="font-size:48px; color: white;" onmouseover="changeColor(this)" onmouseout="noColor(this)"></i></a>
+            <a href="https://www.youtube.com/watch?v=G1NGE16Bt48"><i class="fab fa-youtube" style="font-size:48px; color: white;"
+                onmouseover="changeColor(this)" onmouseout="noColor(this)"></i></a>
           </div>
         </div>
       </div>
@@ -159,7 +175,7 @@
             </p>
           </div>
           <div class="card-action">
-            <a href="http://www.fantasmamagic.com/" id="words">Tienda de Magia</a>
+            <a href="http://www.fantasmamagic.com/" id="words"><button class="pulse">Tienda de Magia</button></a>
           </div>
         </div>
         <div class="card purple darken-2">
@@ -222,12 +238,78 @@
             </p>
           </div>
           <div class="card-action">
-            <a href="https://www.youtube.com/watch?v=450p7goxZqg"><i class="fab fa-youtube" style="font-size:48px; color: white;" onmouseover="changeColor(this)" onmouseout="noColor(this)"></i></a>
+            <a href="https://www.youtube.com/watch?v=450p7goxZqg"><i class="fab fa-youtube" style="font-size:48px; color: white;"
+                onmouseover="changeColor(this)" onmouseout="noColor(this)"></i></a>
           </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col offset-s5">
+        <div class="toggle toggle--daynight">
+          <input type="checkbox" id="toggle--daynight" class="toggle--checkbox">
+          <label class="toggle--btn" for="toggle--daynight"><span class="toggle--feature"></span></label>
         </div>
       </div>
     </div>
   </div>
+
+  
+  <div class="container" id="not-on-mobile">
+    <div class="row">
+      <div class="col s4 offset-s5"></div>
+      <div id="slider" class="slope">
+        <a class="control_next"><i class="fas fa-angle-right"></i></a>
+        <a class="control_prev"><i class="fas fa-angle-left"></i></a>
+        <ul>
+          <li class="slide1" style="background-image: url('kimi.jpg'); background-size: cover;"></li>
+          <li class="slide1" style="background-image: url('pyke.jpg'); background-size: cover;"></li>
+          <li class="slide1" style="background-image: url('hollow.jpg'); background-size: cover;"></li>
+          <li class="slide1" style="background-image: url('skyrim.jpg'); background-size: cover;"></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+  
+    <div class="container" id="on-mobile">
+      <div class="row">
+        <div class="col s4 offset-s5"></div>
+        <div id="slider" class="slope1">
+          <a class="control_next"><i class="fas fa-angle-right"></i></a>
+          <a class="control_prev"><i class="fas fa-angle-left"></i></a>
+          <ul>
+            <li class="slide2" style="background-image: url('kimi.jpg'); background-size: cover;"></li>
+            <li class="slide2" style="background-image: url('pyke.jpg'); background-size: cover;"></li>
+            <li class="slide2" style="background-image: url('hollow.jpg'); background-size: cover;"></li>
+            <li class="slide2" style="background-image: url('skyrim.jpg'); background-size: cover;"></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  
+
+
+
+
+
+
+  <!--
+      BOTONES
+
+      <button class="fill">Fill In</button>
+    <button class="pulse">Pulse</button>
+    <button class="close">Close</button>
+    <button class="raise">Raise</button>
+    <button class="up">Fill Up</button>
+    <button class="slide">Slide</button>
+    <button class="offset">Offset</button> -->
 
 
   <!--JavaScript at end of body for optimized loading-->

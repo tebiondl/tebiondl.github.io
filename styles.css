@@ -4,7 +4,8 @@ body{
     background-image: url('hr.jpg');
     background-repeat: repeat;
     background-attachment: fixed;
-    background-size: cover;                
+    background-size: cover;     
+              
    }
    .goUp{
     display:none;
@@ -29,7 +30,7 @@ body{
      
     padding: 10px; 
     color:white; 
-    font-family: "plasmati"; 
+    font-family: arial,helvetica; 
     font-size:14px;
    }
 
@@ -62,4 +63,5 @@ body{
     font-family: "plasmati";
     src:url(plasmatic.ttf);
 }
+
 
