@@ -21,6 +21,8 @@ $(document).ready(function () {
         }
     });
 
+    z=0;
+
     var x = 0;
     var y = 0;
     var z = 0;
@@ -28,73 +30,7 @@ $(document).ready(function () {
     if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
         z = 1;
     }
-    console.log(x);
-    console.log(y);
-
-    $(".navSearchIcon").click(() => {
-
-        if (z == 0) {
-            $(".no-word").fadeIn();
-            y = 0;
-
-            if (x == 0) {
-                $(".navSearch").fadeIn();
-                x = 1;
-                console.log(x);
-                /*removeHighlight();*/
-            } else {
-                $(".navSearch").fadeOut();
-                x = 0;
-                console.log(x);
-            }
-        }
-
-    });
-
-    $(".navsuperpos").click(() => {
-        if (z == 0) {
-            if (y == 0) {
-                $(".no-word").hide();
-                y = 1;
-            } else {
-                $(".no-word").show();
-                y = 0;
-            }
-        }
-
-    });
-
     
-
-
-if(z==0){
-    $(".slide2").remove();
-    $(".slope1").remove();
-    $(".slide2").remove();
-    z=1;
-}else{
-    $(".slide1").remove();
-    $(".slope").remove();
-    $(".slide1").remove();
-    z=0;
-}
-
-
-    /*$("#word").click(() => {
-        if (z == 0) {
-            if (y == 0) {
-                $(".no-word").hide();
-                y = 1;
-            } else {
-                $(".no-word").show();
-                y = 0;
-            }
-        }
-
-    });*/
-
-
-
 
     var w = new Hilitor("content");
 
@@ -142,10 +78,22 @@ if(z==0){
     });
 
 
+    if(z==0){
+        $(".slide2").remove();
+        $(".slope1").remove();
+        $(".slide2").remove();
+        z=1;
+    }else{
+        $(".slide1").remove();
+        $(".slope").remove();
+        $(".slide1").remove();
+        z=0;
+    }
+
 });
 
 function changeColor(text) {
-    text.style.color = "orange";
+    text.style.color = "#4973FF";
     text.style.textDecoration = "underline";
 }
 
@@ -225,25 +173,32 @@ jQuery(document).ready(function ($) {
 
 });
 
+var v = 0;
 
-
-
-/*
-var elem = document.getElementsByClassName('slide1');
-
-if(n==1){
-    var elem = document.getElementsByClassName('slide1');
-    console.log("hola12");
-    elem.style.width = "300px";
-    elem.style.height = "200px";
+function navAppear(){
+   
+    var x = document.getElementById("searchBar");
     
-
+    
+    if (v == 0) {
+        x.style.display = "block";
+        v=1;
+        console.log(v);
+    } else {
+        x.style.display = "none";
+        v=0;
+        console.log(v);
+    }
 }
 
-if(n==0){
-    var elem = document.getElementsByClassName('slide1');
-    console.log("hola13");
-    elem.style.width = "500px";
-    elem.style.height = "300px";
-    
-}*/
+
+
+
+
+
+
+
+
+
+
+

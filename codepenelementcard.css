@@ -224,12 +224,12 @@ h1 + .headingOuter {
     box-shadow: 0 0 0 0 var(--hover), inset 6em 3.5em 0 0 var(--hover);
   }
   .fill {
-    --color: #a972cb;
+    --color: #4973FF;
     --hover: #cb72aa;
   }
   .pulse {
-    --color: #ef6eae;
-    --hover: #ef8f6e;
+    --color: #4973FF;
+    --hover: #4973FF;
   }
   .close {
     --color: #ff7f82;
@@ -314,8 +314,8 @@ h1 {
   float: left;
   margin: 0;
   padding: 0;
-  width: 500px;
-  height: 300px;
+  width: 610px;
+  height: 350px;
   background: #ccc;
   text-align: center;
   line-height: 300px;
@@ -371,6 +371,53 @@ a.control_next {
   width: 160px;
   font-size: 18px;
 }
+
+
+
+.card-flip {
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+}
+.card-flip:hover .flip, .card-flip.hover .flip {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.card-flip,
+.front,
+.back {
+  width: 100%;
+  height: 200px;
+}
+
+.flip {
+  transition: 0.6s;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  position: relative;
+}
+
+.front,
+.back {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.front {
+  z-index: 2;
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
+}
+
+.back {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+
 
 
   

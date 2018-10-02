@@ -1,7 +1,7 @@
 body{
     margin: 0;
     padding: 0;
-    background-image: url('hr.jpg');
+    background-image: url('hr.png');
     background-repeat: repeat;
     background-attachment: fixed;
     background-size: cover;     
@@ -22,34 +22,37 @@ body{
    .textbg{
      
     padding: 10px; 
-    color:white; 
+    color:#4973FF; 
     font-family: arial,helvetica; 
     font-size:14px;
+    background-color: #69D4FF;
    }
    .textbg1{
      
     padding: 10px; 
-    color:white; 
+    color:#4973FF; 
     font-family: arial,helvetica; 
     font-size:14px;
+    background-color: #69D4FF;
    }
 
-   .navSearch{
+   #searchBar{
        display:none;
    }
+   
    
    .superpos{
     z-index: +1;
    }
    .navsuperpos{
-       background:#b26ed8;
+       background:#549AE8;
        top: 0;
        position: absolute;
        max-width: 15%;
 
    }
    .mainnav{
-      background:#8349a3;
+      background:#4973FF;
    }
    
    .mobwin{
@@ -64,4 +67,16 @@ body{
     src:url(plasmatic.ttf);
 }
 
+#card4{
+    background-color: #549AE8;
+}
+
+.estrella{
+    width: 30%;
+    height: auto;
+    padding: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 

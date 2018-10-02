@@ -19,6 +19,7 @@
   <script src="hilitor.js"></script>
 
 
+
   <!--Let browser know website is optimized for mobile-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Miguel Barragán Rodríguez</title>
@@ -44,7 +45,7 @@
             <a href="#" class="brand-logo truncate center">EPICIDAD</a>
             <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
             <ul class="left hide-on-med-and-down">
-              <li><a class="navSearchIcon" href="#"><i class="material-icons left" style="color: orange;">search</i></a></li>
+              <li><a class="navSearchIcon" href="#" onclick="navAppear()"><i class="material-icons left">search</i></a></li>
             </ul>
           </div>
         </nav>
@@ -71,8 +72,8 @@
       </div>
 
 
-      <div class="navSearch col s3 m3 offset-s1 offset-m1">
-        <nav class="navsuperpos">
+      <div class="navSearch col m3 offset-s1 offset-m1">
+        <nav class="navsuperpos" id="searchBar">
           <div class="nav-wrapper">
             <form>
               <div class="input-field">
@@ -92,7 +93,7 @@
   <div class="container">
     <div class="row">
       <div class="col s12 m6">
-        <div class="card purple darken-2">
+        <div class="card" id="card4">
           <div class="card-image">
             <img src="yo.jpg">
             <span class="card-title" id="words">Sobre mí</span>
@@ -112,7 +113,7 @@
                 onmouseover="changeColor(this)" onmouseout="noColor(this)"></i></a>
           </div>
         </div>
-        <div class="card purple darken-2">
+        <div class="card" id="card4">
           <div class="card-content white-text">
             <span class="card-title" id="words">Letra de fiesta pagana</span>
             <p class="textbg" id="words">
@@ -160,9 +161,38 @@
                 onmouseover="changeColor(this)" onmouseout="noColor(this)"></i></a>
           </div>
         </div>
+        <div class="card-flip" id="not-on-mobile">
+          <div class="flip">
+            <div class="front">
+              <!-- front content -->
+              <div class="card" id="card4">
+                <div class="card-block">
+                  <h4 class="card-title" style="text-align: center; color: #54E1E8;">ESTRELLAS DEL REPOSITORIO DE GITHUB</h4>
+                  <p style="text-align: center;  color: #54E1E8;">En esta flip card se encuentran las estrellas que tiene
+                    el repositorio de github en el que está alojado esta página web</p>
+                    <img src="estrella.png" alt="estrella" class="estrella">
+                </div>
+              </div>
+            </div>
+            <div class="back">
+              <!-- back content -->
+              <div class="card" id="card4">
+                <div class="card-block">
+                  <h4 class="card-title" style="text-align: center;  color: #54E1E8;">ESTRELLAS:</h4>
+                  <a style="color: orange; margin:20px auto; text-align:center; display:block; font-size: 20px;" href="https://github.com/tebiondl/tebiondl.github.io">
+                  </a>
+                </div>
+                <div class="card-block">
+                  <p class="card-text" style="text-align: center;  color: #54E1E8;">Me he enterado de que estos son los
+                    likes que te ponen, así que apoya este repositorio y dale a like.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="col s12 m6">
-        <div class="card purple darken-2">
+        <div class="card" id="card4">
           <div class="card-image">
             <img src="mg.jpg">
             <span class="card-title" id="words">Soy Mago</span>
@@ -178,7 +208,7 @@
             <a href="http://www.fantasmamagic.com/" id="words"><button class="pulse">Tienda de Magia</button></a>
           </div>
         </div>
-        <div class="card purple darken-2">
+        <div class="card" id="card4">
           <div class="card-content white-text">
             <span class="card-title" id="words">Letra de All of me</span>
             <p class="textbg" id="words">
@@ -242,58 +272,49 @@
                 onmouseover="changeColor(this)" onmouseout="noColor(this)"></i></a>
           </div>
         </div>
-      </div>
-
-    </div>
-  </div>
-
-
-  <div class="container">
-    <div class="row">
-      <div class="col offset-s5">
         <div class="toggle toggle--daynight">
           <input type="checkbox" id="toggle--daynight" class="toggle--checkbox">
           <label class="toggle--btn" for="toggle--daynight"><span class="toggle--feature"></span></label>
         </div>
+        <div id="slider" class="slope">
+          <a class="control_next"><i class="fas fa-angle-right"></i></a>
+          <a class="control_prev"><i class="fas fa-angle-left"></i></a>
+          <ul>
+            <li class="slide1" style="background-image: url('kimi.jpg'); background-size: cover;"></li>
+            <li class="slide1" style="background-image: url('pyke.jpg'); background-size: cover;"></li>
+            <li class="slide1" style="background-image: url('hollow.jpg'); background-size: cover;"></li>
+            <li class="slide1" style="background-image: url('skyrim.jpg'); background-size: cover;"></li>
+          </ul>
+        </div>
       </div>
+
     </div>
   </div>
 
-  
-  <div class="container" id="not-on-mobile">
+
+  <div class="container" id="on-mobile">
     <div class="row">
-      <div class="col s4 offset-s5"></div>
-      <div id="slider" class="slope">
+      <div class="col s12"></div>
+      <div id="slider" class="slope1">
         <a class="control_next"><i class="fas fa-angle-right"></i></a>
         <a class="control_prev"><i class="fas fa-angle-left"></i></a>
         <ul>
-          <li class="slide1" style="background-image: url('kimi.jpg'); background-size: cover;"></li>
-          <li class="slide1" style="background-image: url('pyke.jpg'); background-size: cover;"></li>
-          <li class="slide1" style="background-image: url('hollow.jpg'); background-size: cover;"></li>
-          <li class="slide1" style="background-image: url('skyrim.jpg'); background-size: cover;"></li>
+          <li class="slide2" style="background-image: url('kimi.jpg'); background-size: cover;"></li>
+          <li class="slide2" style="background-image: url('pyke.jpg'); background-size: cover;"></li>
+          <li class="slide2" style="background-image: url('hollow.jpg'); background-size: cover;"></li>
+          <li class="slide2" style="background-image: url('skyrim.jpg'); background-size: cover;"></li>
         </ul>
       </div>
     </div>
   </div>
+  </div>
 
 
-  
-    <div class="container" id="on-mobile">
-      <div class="row">
-        <div class="col s4 offset-s5"></div>
-        <div id="slider" class="slope1">
-          <a class="control_next"><i class="fas fa-angle-right"></i></a>
-          <a class="control_prev"><i class="fas fa-angle-left"></i></a>
-          <ul>
-            <li class="slide2" style="background-image: url('kimi.jpg'); background-size: cover;"></li>
-            <li class="slide2" style="background-image: url('pyke.jpg'); background-size: cover;"></li>
-            <li class="slide2" style="background-image: url('hollow.jpg'); background-size: cover;"></li>
-            <li class="slide2" style="background-image: url('skyrim.jpg'); background-size: cover;"></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  
+
+
+
+
+
 
 
 
