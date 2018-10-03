@@ -21,10 +21,9 @@ $(document).ready(function () {
         }
     });
 
-    z=0;
+    
 
-    var x = 0;
-    var y = 0;
+    
     var z = 0;
 
     if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
@@ -48,13 +47,16 @@ $(document).ready(function () {
     searchwords.addEventListener("keydown", function (e) {
         var a = e.key;
         if (a == "Enter") {
-
+           
             console.log("#searchwords");
             console.log("hola");
 
             highlight();
-            $(".navSearch").fadeOut();
-            x = 0;
+            v=0;
+
+            var x = document.getElementById("searchBar");
+            
+            x.style.display = "none";
 
         }
     });
@@ -71,7 +73,6 @@ $(document).ready(function () {
         if (b == "Enter") {
 
             highlight1();
-            x = 0;
             $('#modal1').modal('close');
 
         }
