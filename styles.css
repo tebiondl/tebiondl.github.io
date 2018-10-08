@@ -81,3 +81,8 @@ body{
     
 }
 
+.resize{
+    width: 85px;
+    height: auto;
+}
+
