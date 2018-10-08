@@ -228,8 +228,8 @@ h1 + .headingOuter {
     --hover: #cb72aa;
   }
   .pulse {
-    --color: #4973FF;
-    --hover: #4973FF;
+    --color: black;
+    --hover: black;
   }
   .close {
     --color: #ff7f82;

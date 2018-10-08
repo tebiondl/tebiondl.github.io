@@ -93,10 +93,23 @@ $(document).ready(function () {
 
 });
 
-function changeColor(text) {
-    text.style.color = "#4973FF";
+function changeColor1(text) {
+    text.style.color = "#0088cc";
     text.style.textDecoration = "underline";
 }
+function changeColor2(text) {
+    text.style.color = "black";
+    text.style.textDecoration = "underline";
+}
+function changeColor3(text) {
+    text.style.color = "#3b5998";
+    text.style.textDecoration = "underline";
+}
+function changeColor4(text) {
+    text.style.color = "#ff0000";
+    text.style.textDecoration = "underline";
+}
+
 
 function noColor(text) {
     text.style.color = "white";
