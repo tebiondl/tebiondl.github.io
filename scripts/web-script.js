@@ -4,6 +4,21 @@ $(document).ready(function () {
 
     $(document).ready(function () {
         $('.modal').modal();
+        $('#submit').click(function(event){
+            //event.preventDefault()
+
+            var name = $('#last_name').val()
+            var mail = $('#email_inline').val()
+            var text = $('#textarea1').val()
+
+            if(mail.length > 5 && mail.includes('@') && mail.includes('.')){
+                console.log("epicidad")
+            }else{
+                
+            }
+        })
+
+        
     });
 
     $('.goUp').click(function () {
@@ -114,6 +129,22 @@ function changeColor4(text) {
 function noColor(text) {
     text.style.color = "white";
     text.style.textDecoration = "none";
+}
+
+function sendEmail() {
+    Email.send({
+        // Host: "smtp.gmail.com",
+        //  Username: "Your mail here",
+        //  Password: "Your Password here",
+        SecureToken: "Generate token here",
+        From: "Your mail here",
+        To: 'Your To mail here',
+        Subject: "Mail Subject here",
+        Body: "Mail Body Here"
+    })
+        .then(function (message) {
+            alert("mail sent successfully")
+        });
 }
 
 

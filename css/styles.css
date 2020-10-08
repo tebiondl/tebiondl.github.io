@@ -25,7 +25,7 @@ body{
     color:black; 
     font-family: arial,helvetica; 
     font-size:14px;
-    background-color: #69D4FF;
+    background-color: #ffffff;
    }
    .textbg1{
      
@@ -33,7 +33,7 @@ body{
     color:black; 
     font-family: arial,helvetica; 
     font-size:14px;
-    background-color: #69D4FF;
+    background-color: #ffffff;
    }
 
    #searchBar{
@@ -45,7 +45,7 @@ body{
     z-index: +1;
    }
    .navsuperpos{
-       background:#549AE8;
+       background:#c7c3af;
        top: 0;
        position: absolute;
        max-width: 15%;
@@ -68,7 +68,7 @@ body{
 }
 
 #card4{
-    background-color: #549AE8;
+    background-color: #c7c3af;
 }
 
 .estrella{

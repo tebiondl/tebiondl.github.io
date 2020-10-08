@@ -17,6 +17,7 @@
   <script src="https://code.jquery.com/jquery-latest.js"></script>
   <script src="scripts/web-script.js"></script>
   <script src="scripts/hilitor.js"></script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
 
 
 
@@ -43,13 +44,6 @@
         <nav class="mainnav">
           <div class="nav-wrapper">
             <a href="#" class="brand-logo truncate center">EPICIDAD</a>
-            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-            <ul class="left hide-on-med-and-down">
-              <li><a class="navSearchIcon" href="#" onclick="navAppear()"><i class="material-icons left">search</i></a></li>
-            </ul>
-            <ul class="right hide-on-med-and-down">
-              <li><img src="img/le.png" alt="Logo" class="resize"></li>
-            </ul>
           </div>
         </nav>
       </div>
@@ -95,16 +89,18 @@
 
   <div class="container">
     <div class="row">
-      <div class="col s12 m6">
+      <div class="col s8 offset-s2">
         <div class="card" id="card4">
           <div class="card-image">
             <img src="img/yo.jpg">
-            <span class="card-title" id="words">Sobre mí</span>
+            <span class="card-title" id="words">About me</span>
           </div>
           <div class="card-content">
             <p class="textbg" id="words">
-              Soy Miguel Barragán, alumno de la UPM cursando ingeniería de software, me gusta el anime y los
-              videojuegos, llevo cojín a clase y un reloj de bolsillo.
+              I'm Miguel Barragan, 20 years old, student at UPM university in Spain. I am in my third year of computer engineering and also working on my own projects.
+              Such as Videogames with Unity, doing also my own art and music. I've been doing magic for about 2 years, skating 1 and a half years, learning to play the piano these days.
+              I've developed webs, mobile apps and videogames through out the past 2 years. I've participated in several game Jams and hackathons.
+              I have published 1 one on the play store called "Over the Sky".
             </p>
           </div>
           <div class="card-action">
@@ -116,231 +112,42 @@
                 onmouseover="changeColor3(this)" onmouseout="noColor(this)"></i></a>
           </div>
         </div>
-        <div class="card" id="card4">
-          <div class="card-content white-text">
-            <span class="card-title" id="words">Letra de fiesta pagana</span>
-            <p class="textbg" id="words">
-              Cuando despiertes un día y sientas que no puedas más
-              Que en el nombre del de arriba tu vida van a manejar
-              Si sientes que el miedo se pega a tu piel
-              Por ser comunero y justicia querer
-              Si te rindes hermano, por ti nunca pensarás
-              Cuando vayan a pedirte Los diezmos a fin de mes
-              Y la santa inquisición Te "invite" a confesar
-              Por eso amigo tú alza la voz
-              Di que nunca pediste opinión
-              Si es verdad que existe un dios que trabaje de sol a sol
-              Ponte en pie, alza el puño y ven
-              A la fiesta pagana, en la hoguera hay de beber
-              De la misma condición no es el pueblo ni un señor
-              Ellos tienen el clero y nosotros nuestro sudor
-              Si no hay pan para los tuyos y ves muy gordo al abad
-              Si su virgen viste de oro, desnúdala
-              Cómo van a silenciar al jilguero o al canario
-              Si no hay cárcel ni tumba para el canto libertario
-              Ponte en pie, alza el puño y ven
-              A la fiesta pagana, en la hoguera hay de beber
-              De la misma condición no es el pueblo ni un señor
-              Ellos tienen el clero y nosotros nuestro sudor
-              Ponte en pie, alza el puño y ven
-              A la fiesta pagana, en la hoguera hay de beber
-              De la misma condición no es el pueblo ni un señor
-              Ellos tienen el clero y nosotros nuestro sudor
-              Ponte en pie, alza el puño y ven
-              A la fiesta pagana, en la hoguera hay de beber
-              De la misma condición no es el pueblo ni un señor
-              Ellos tienen el clero y nosotros nuestro sudor
-              Cabrones
-              Ah ah ah ah
-              Ah ah ah
-              Ah ah ah ah ah ah ah
-              Ah ah ah
-              Ah ah ah
-              Ah ah ah ah ah ah ah
-            </p>
-          </div>
-          <div class="card-action">
-            <a href="https://www.youtube.com/watch?v=G1NGE16Bt48"><i class="fab fa-youtube" style="font-size:48px; color: white;"
-                onmouseover="changeColor4(this)" onmouseout="noColor(this)"></i></a>
-          </div>
-        </div>
-        <div class="card-flip" id="not-on-mobile">
-          <div class="flip">
-            <div class="front">
-              <!-- front content -->
-              <div class="card" id="card4">
-                <div class="card-block">
-                  <h4 class="card-title" style="text-align: center; color: #54E1E8;"><br>ESTRELLAS EN REPOSITORIO DE
-                    GITHUB</h4>
-                  <p style="text-align: center;  color: #54E1E8;"><br>En esta flip card se encuentran las estrellas que
-                    tiene<br>el repositorio de github en el que está alojado esta página web</p><br>
-
-                </div>
-              </div>
-            </div>
-            <div class="back">
-              <!-- back content -->
-              <div class="card" id="card4">
-                <div class="card-block">
-                  <h4 class="card-title" style="text-align: center;  color: #54E1E8;"><br>ESTRELLAS:</h4>
-                  <a id="getStars" style="color: orange; margin:20px auto; text-align:center; display:block; font-size: 20px;"
-                    href="https://github.com/tebiondl/tebiondl.github.io">
-                  </a>
-                </div>
-                <div class="card-block">
-                  <p class="card-text" style="text-align: center;  color: #54E1E8;"><br></p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
-      <div class="col s12 m6">
+
+      <div class="col s8 offset-s2">
         <div class="card" id="card4">
-          <div class="card-image">
-            <img src="img/mg.jpg">
-            <span class="card-title" id="words">Soy Mago</span>
-          </div>
           <div class="card-content">
-            <p class="textbg1" id="words">
-              Llevo 1 año y varios meses practicando trucos de magia con cartas, tengo amplia experiencia en muchos
-              movimientos mágicos y, conocimiento de diversos trucos, utiilizo varios mazos de cartas y,
-              recientemente he empezado a practicar trucos con monedas y otros objetos.
-            </p>
+            <div class="row">
+              <span class="card-title" id="words">Contact me</span>             
+              <form class="col s12" action="https://formspree.io/purreren@gmail.com" method="post">
+                <div class="row">                
+                  <div class="input-field col s12">
+                    <input id="last_name" type="text" class="contactName" style="color:black" name="subject">
+                    <label for="last_name" style="color:black">Name</label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="input-field col s12">
+                    <textarea id="textarea1" class="materialize-textarea" style="color:black" name="message"></textarea>
+                    <label for="textarea1" style="color:black">What do you want to tell me?</label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="input-field inline col s12">
+                    <input id="email_inline" type="email" class="validate" style="color:black" name="email">
+                    <label for="email_inline" style="color:black">Email</label>
+                    <span class="helper-text" data-error="wrong" data-success="right"></span>
+                  </div>
+                </div>
+                <button class="btn" type="submit" id="submit">Send
+                </button>
+              </form>              
+            </div>
           </div>
-          <div class="card-action">
-            <a href="http://www.fantasmamagic.com/" id="words"><button class="pulse">Tienda de Magia</button></a>
-          </div>
-        </div>
-        <div class="card" id="card4">
-          <div class="card-content white-text">
-            <span class="card-title" id="words">Letra de All of me</span>
-            <p class="textbg" id="words">
-              What would I do without your smart mouth
-              Drawing me in, and you kicking me out
-              Got my head spinning, no kidding, I can’t pin you down
-              What’s going on in that beautiful mind
-              I’m on your magical mystery ride
-              And I’m so dizzy, don’t know what hit me, but I’ll be alright
-              My head’s under water
-              But I’m breathing fine
-              You’re crazy and I’m out of my mind
-              'Cause all of me
-              Loves all of you
-              Love your curves and all your edges
-              All your perfect imperfections
-              Give your all to me
-              I’ll give my all to you
-              You’re my end and my beginning
-              Even when I lose I’m winning
-              'Cause I give you all, all of me
-              And you give me all, all of you
-              How many times do I have to tell you
-              Even when you’re crying you’re beautiful too
-              The world is beating you down, I’m around through every move
-              You’re my downfall, you’re my muse
-              My worst distraction, my rhythm and blues
-              I can’t stop singing, it’s ringing, in my head for you
-              My head’s under water
-              But I’m breathing fine
-              You’re crazy and I’m out of my mind
-              'Cause all of me
-              Loves all of you
-              Love your curves and all your edges
-              All your perfect imperfections
-              Give your all to me
-              I’ll give my all to you
-              You’re my end and my beginning
-              Even when I lose I’m winning
-              'Cause I give you all of me
-              And you give me all, all of you
-              Give me all of you
-              Cards on the table, we’re both showing hearts
-              Risking it all, though it’s hard
-              'Cause all of me
-              Loves all of you
-              Love your curves and all your edges
-              All your perfect imperfections
-              Give your all to me
-              I’ll give my all to you
-              You’re my end and my beginning
-              Even when I lose I’m winning
-              'Cause I give you all of me
-              And you give me all of you
-              I give you all, all of me
-              And you give me all, all of you
-            </p>
-          </div>
-          <div class="card-action">
-            <a href="https://www.youtube.com/watch?v=450p7goxZqg"><i class="fab fa-youtube" style="font-size:48px; color: white;"
-                onmouseover="changeColor4(this)" onmouseout="noColor(this)"></i></a>
-          </div>
-        </div>
-
-      </div>
-
-    </div>
-  </div>
-
-
-  <div class="container" id="not-on-mobile">
-    <div class="row">
-      <div class="col s12 m12 offset-s1">
-        <div class="toggle toggle--daynight">
-          <input type="checkbox" id="toggle--daynight" class="toggle--checkbox">
-          <label class="toggle--btn" for="toggle--daynight"><span class="toggle--feature"></span></label>
-        </div>
-        <div id="slider" class="slope">
-          <a class="control_next"><i class="fas fa-angle-right"></i></a>
-          <a class="control_prev"><i class="fas fa-angle-left"></i></a>
-          <ul>
-            <li class="slide1" style="background-image: url('img/kimi.jpg'); background-size: cover; "></li>
-            <li class="slide1" style="background-image: url('img/pyke.jpg'); background-size: cover; "></li>
-            <li class="slide1" style="background-image: url('img/hollow.jpg'); background-size: cover; "></li>
-            <li class="slide1" style="background-image: url('img/skyrim.jpg'); background-size: cover; "></li>
-          </ul>
         </div>
       </div>
     </div>
   </div>
-
-
-  <div class="container" id="on-mobile">
-    <div class="row">
-      <div class="col s12">
-        <div id="slider" class="slope1">
-          <a class="control_next"><i class="fas fa-angle-right"></i></a>
-          <a class="control_prev"><i class="fas fa-angle-left"></i></a>
-          <ul>
-            <li class="slide2" style="background-image: url('img/kimi.jpg'); background-size: cover;"></li>
-            <li class="slide2" style="background-image: url('img/pyke.jpg'); background-size: cover;"></li>
-            <li class="slide2" style="background-image: url('img/hollow.jpg'); background-size: cover;"></li>
-            <li class="slide2" style="background-image: url('img/skyrim.jpg'); background-size: cover;"></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-
-  <div class="container">
-    <div class="row">
-      <div class="col s12">
-        <h4 style="color: white; text-align: center;">HITOS DE VIDEOJUEGOS</h4>
-        <video id="video" controls="controls" class="responsive-video">
-          <source src="video/game2.mp4" type="video/mp4">
-        </video>
-      </div>
-    </div>
-  </div>
-
-
-
-
-
-
-
 
 
   <!--
